@@ -20,10 +20,9 @@ while True:
 
 
         cv.imshow('img', img)
-        k = cv.waitKey(30) & 0xff
-        if k == 27:
-            break 
-cap.release()
-cv.destroyAllWindows()
+        k = cv.waitKey(0) & 0xff
+        if k == ord('q'):
+            break
+
 
 
